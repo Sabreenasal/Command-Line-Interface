@@ -1,20 +1,26 @@
 class Horoscope
-attr_accesor :name, :birthday
+attr_accessor :name, :birthday
 
 def initialize
   @name = name
-  @date = birthday
+  @birthday = birthday
 end
 
 def horoscope
-  puts "/n"
+  puts "\n"
   puts "Hello! Welcome to Ruby Horoscopes!"
   puts "Let's see the forecast of your future. What's your name?"
   self.name = gets.chomp.capitalize
-  puts "What is your #{self.birthday}?"
-  self.birthday = gets.chomp
-  puts "/n"
-  
+  puts "Thank you #{self.name}!"
+  zodiac_signs
+end
+
+def zodiac_signs
+  loop do 
+    puts "\n"
+    puts "To begin I will need to know your zodiac. What is your zodiac sign #{self.name}?"
+  end
+
 
   
 
