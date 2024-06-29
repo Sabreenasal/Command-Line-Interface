@@ -35,9 +35,10 @@ def zodiac_signs
     puts "12. Sagittarius(November 21 - December 21)"
     puts "Choose a zodiac sign: "
     puts choice = gets.chomp.to_i
+    #choice_commands
   end
 
-def commands
+def choice_commands
   loop do 
     puts "\n"
     puts "Thank you! Now that I have your sign #{self.name} what would you like to know?"
@@ -59,6 +60,7 @@ def commands
       break
     else
       puts "That is not a zodiac sign. Please choose another option."
+    end
     end
     end
   end
