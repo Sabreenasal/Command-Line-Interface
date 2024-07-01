@@ -21,7 +21,7 @@ class Horoscope
       puts "\n"
       puts "To begin I will need to know your zodiac. What is your zodiac sign #{self.name}?"
       puts "\n"
-      puts "1. Capricorn (December 22 - January 19)"
+      puts "1. Capricorn(December 22 - January 19)"
       puts "2. Aquarius(January 20 - February 18)"
       puts "3. Pisces(February 19 - March 20)"
       puts "4. Aries(March 21 - April 19)"
@@ -35,7 +35,7 @@ class Horoscope
       puts "12. Sagittarius(November 21 - December 21)"
       puts "Choose a zodiac sign: "
       self.sign = gets.chomp.to_i
-      # puts "choice = gets.chomp.to_i"
+    
       choice_commands
     end
   end
@@ -73,8 +73,19 @@ def monthly_horoscope
 end
 
 def personality_traits
-  puts "hello"
-  choices
+  if self.sign = 1
+    loop do capricorn
+      break
+    end
+    end
+  #puts "\n"
+  capricorn 
+  
+end
+
+def capricorn
+  puts "\n"
+  puts "Capricorns are very fun!"
 end
 
 def choices
