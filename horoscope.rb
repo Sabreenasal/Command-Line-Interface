@@ -74,12 +74,9 @@ end
 
 def personality_traits
   if self.sign = 1
-    loop do capricorn
-      break
+      capricorn
     end
-    end
-  #puts "\n"
-  capricorn 
+  #puts "\n" 
   
 end
 
