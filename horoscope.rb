@@ -50,38 +50,49 @@ def choice_commands
     puts "2. Personality Traits"
     puts "3. Exit Simulation"
     puts "Choose an Option:"
-   choice = gets.chomp.to_i
-   case choice
+    choice = gets.chomp.to_i
+    case choice
     when 1
       monthly_horoscope
     when 2
       personality_traits
     when 3
       puts "Thank you for checking your horoscope #{self.name}! See you next time!"
-      break
-   
-
-   #case choice
-    #when 1
-     # monthly_horoscope
-    #when 2
-      #personality_traits
-    #when 3
-      #puts "Thank you for checking your horoscope #{self.name}! See you next time!"
-      #break
-    #else
-      #puts "That is not a zodiac sign. Please choose another option."
+    else
+      puts "That is not a zodiac sign. Please choose another option."
+      exit
     end
   end
-  monthly_horoscope
 end
 
 def monthly_horoscope
   puts "\n"
-  quotes = ["You will have a productive month!","You will have bad luck this month. Try to stay positive!", "You will try many new things this month!", "This month you will see someone from your past."]
+  quotes = ["**You will have a productive month!**", "**You will have bad luck this month. Try to stay positive!**", "**You will try many new things this month!**", "**This month you will see someone from your past.**"]
   puts quotes.sample
+  choices
 end
 
 def personality_traits
   puts "hello"
+  choices
+end
+
+def choices
+  puts "\n"
+  puts "Choose another option."
+  puts "\n"
+  puts "1. Monthly Horoscope"
+  puts "2. Personality Traits"
+  puts "3. Exit Simulation"
+  puts "Choose an Option:"
+  choice = gets.chomp.to_i
+  case choice
+  when 1
+    monthly_horoscope
+  when 2
+    personality_traits
+  when 3
+    puts "Thank you for checking your horoscope #{self.name}! See you next time!"
+    exit
+  end
 end
