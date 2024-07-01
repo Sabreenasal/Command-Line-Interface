@@ -4,6 +4,7 @@ class Horoscope
   def initialize
     @name = name
     @sign = sign
+
   end
 
   def horoscope
@@ -58,9 +59,10 @@ def choice_commands
       personality_traits
     when 3
       puts "Thank you for checking your horoscope #{self.name}! See you next time!"
+      exit
     else
       puts "That is not a zodiac sign. Please choose another option."
-      exit
+      choice_commands
     end
   end
 end
@@ -75,14 +77,19 @@ end
 def personality_traits
   if self.sign = 1
       capricorn
-    end
-  #puts "\n" 
-  
+  elsif self.sign = 2
+       aquarius
+    end 
 end
 
 def capricorn
   puts "\n"
   puts "Capricorns are very fun!"
+end
+
+def aquarius
+  puts "\n"
+  puts "Aquarius signs love sports!"
 end
 
 def choices
