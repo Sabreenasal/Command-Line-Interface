@@ -69,7 +69,7 @@ end
 
 def monthly_horoscope
   puts "\n"
-  quotes = ["**You will have a productive month!**", "**You will have bad luck this month. Try to stay positive!**", "**You will try many new things this month!**", "**This month you will see someone from your past.**"]
+  quotes = ["**You will have a productive month!**", "**You will have bad luck this month. Try to stay positive!**", "**You will try many new things this month!**", "**This month you will see someone from your past.**", "**This month a great opprotunity awaits! Take it!**", "**Avoid distractions this month. They will be abundant. Stay focused!**", "**A new family member will arrive in your life this month!**", "**You will come across an old hobby this month! Dive back in!**"]
   puts quotes.sample
   choices
 end
