@@ -1,5 +1,8 @@
-# ruby-cli-template
+# horoscope-cli
 
-Use this repository as a template for your Ruby CLI (command line interface) project.
+Gives user their horoscope based off their zodiac sign.
+## instructions
+
+Run horoscope.rb in terminal.
 
 - Ruby version: `3.2.1`
