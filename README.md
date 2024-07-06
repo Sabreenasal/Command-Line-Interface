@@ -1,8 +1,8 @@
 # horoscope-cli
 
 Gives user their horoscope based off their zodiac sign.
-## instructions
+## Instructions
 
 Run horoscope.rb in terminal.
 
-- Ruby version: `3.2.1`
+Ruby version: `3.2.1`
