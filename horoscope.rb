@@ -62,7 +62,7 @@ def choice_commands
       puts "Thank you for checking your horoscope #{self.name}! See you next time!"
       exit
     else
-      puts "That is not a option. Please choose another option."
+      puts "THAT IS NOT AN OPTION. PLEASE CHOOSE ANOTHER OPTION."
       choice_commands
     end
   end
